@@ -30,11 +30,7 @@ The project demonstrates the use of Generative AI as an intelligent assistant fo
 ---
 
 ## 4. System Architecture
-1. User submits a query through the frontend interface
-2. Backend receives the query along with menu data
-3. A structured prompt is generated using menu information
-4. Generative AI processes the prompt
-5. The response is returned to the user in readable format
+![System Architecture](system_architecture.png)
 
 ---
 
