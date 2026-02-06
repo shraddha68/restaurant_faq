@@ -1,0 +1,170 @@
+[
+  {
+    "name": "Vegan Buddha Bowl",
+    "ingredients": ["quinoa", "chickpeas", "spinach", "carrot", "avocado"],
+    "diet": ["vegan", "gluten_free", "low_calorie"],
+    "allergens": [],
+    "calories": 420
+  },
+  {
+    "name": "Paneer Tikka",
+    "ingredients": ["paneer", "spices", "yogurt"],
+    "diet": ["vegetarian"],
+    "allergens": ["dairy"],
+    "calories": 520
+  },
+  {
+    "name": "Grilled Chicken Breast",
+    "ingredients": ["chicken", "olive oil", "herbs"],
+    "diet": ["high_protein", "gluten_free", "diabetic_friendly"],
+    "allergens": [],
+    "calories": 350
+  },
+  {
+    "name": "Veggie Pizza",
+    "ingredients": ["flour", "cheese", "tomato", "bell pepper"],
+    "diet": ["vegetarian"],
+    "allergens": ["gluten", "dairy"],
+    "calories": 700
+  },
+  {
+    "name": "Gluten-Free Pasta Primavera",
+    "ingredients": ["gluten-free pasta", "vegetables", "olive oil"],
+    "diet": ["vegetarian", "gluten_free"],
+    "allergens": [],
+    "calories": 480
+  },
+  {
+    "name": "Caesar Salad",
+    "ingredients": ["lettuce", "croutons", "cheese", "chicken"],
+    "diet": ["high_protein"],
+    "allergens": ["gluten", "dairy"],
+    "calories": 430
+  },
+  {
+    "name": "Vegan Lentil Soup",
+    "ingredients": ["lentils", "tomato", "onion", "garlic"],
+    "diet": ["vegan", "low_calorie", "gluten_free"],
+    "allergens": [],
+    "calories": 260
+  },
+  {
+    "name": "Butter Chicken",
+    "ingredients": ["chicken", "butter", "cream", "spices"],
+    "diet": ["high_protein"],
+    "allergens": ["dairy"],
+    "calories": 650
+  },
+  {
+    "name": "Steamed Veg Momos",
+    "ingredients": ["flour", "vegetables", "soy sauce"],
+    "diet": ["vegetarian"],
+    "allergens": ["gluten", "soy"],
+    "calories": 300
+  },
+  {
+    "name": "Brown Rice & Grilled Veg Plate",
+    "ingredients": ["brown rice", "broccoli", "zucchini", "carrot"],
+    "diet": ["vegan", "low_calorie", "gluten_free", "diabetic_friendly"],
+    "allergens": [],
+    "calories": 390
+  },
+  {
+    "name": "Cheese Omelette",
+    "ingredients": ["eggs", "cheese", "butter"],
+    "diet": ["vegetarian", "high_protein"],
+    "allergens": ["dairy", "egg"],
+    "calories": 410
+  },
+  {
+    "name": "Avocado Toast",
+    "ingredients": ["bread", "avocado", "olive oil"],
+    "diet": ["vegan"],
+    "allergens": ["gluten"],
+    "calories": 360
+  },
+  {
+    "name": "Chickpea Salad",
+    "ingredients": ["chickpeas", "tomato", "cucumber", "lemon"],
+    "diet": ["vegan", "gluten_free", "low_calorie"],
+    "allergens": [],
+    "calories": 280
+  },
+  {
+    "name": "Fish Grilled with Herbs",
+    "ingredients": ["fish", "lemon", "olive oil"],
+    "diet": ["high_protein", "gluten_free", "diabetic_friendly"],
+    "allergens": ["fish"],
+    "calories": 330
+  },
+  {
+    "name": "Mushroom Risotto",
+    "ingredients": ["rice", "mushroom", "cheese", "butter"],
+    "diet": ["vegetarian"],
+    "allergens": ["dairy"],
+    "calories": 560
+  },
+  {
+    "name": "Vegan Smoothie Bowl",
+    "ingredients": ["banana", "berries", "chia seeds"],
+    "diet": ["vegan", "low_calorie", "gluten_free"],
+    "allergens": [],
+    "calories": 250
+  },
+  {
+    "name": "Chicken Wrap",
+    "ingredients": ["tortilla", "chicken", "vegetables"],
+    "diet": ["high_protein"],
+    "allergens": ["gluten"],
+    "calories": 480
+  },
+  {
+    "name": "Tofu Stir Fry",
+    "ingredients": ["tofu", "vegetables", "soy sauce"],
+    "diet": ["vegan", "gluten_free", "high_protein"],
+    "allergens": ["soy"],
+    "calories": 340
+  },
+  {
+    "name": "Vegetable Khichdi",
+    "ingredients": ["rice", "lentils", "vegetables"],
+    "diet": ["vegetarian", "low_calorie", "gluten_free", "diabetic_friendly"],
+    "allergens": [],
+    "calories": 310
+  },
+  {
+    "name": "Greek Yogurt Parfait",
+    "ingredients": ["yogurt", "honey", "fruits"],
+    "diet": ["vegetarian"],
+    "allergens": ["dairy"],
+    "calories": 290
+  },
+  {
+    "name": "Quinoa Veg Burger",
+    "ingredients": ["quinoa", "vegetables", "bun"],
+    "diet": ["vegan"],
+    "allergens": ["gluten"],
+    "calories": 450
+  },
+  {
+    "name": "Spinach Soup",
+    "ingredients": ["spinach", "garlic", "onion"],
+    "diet": ["vegan", "low_calorie", "gluten_free"],
+    "allergens": [],
+    "calories": 190
+  },
+  {
+    "name": "Roasted Sweet Potatoes",
+    "ingredients": ["sweet potato", "olive oil", "herbs"],
+    "diet": ["vegan", "gluten_free", "low_calorie"],
+    "allergens": [],
+    "calories": 270
+  },
+  {
+    "name": "Chicken Salad Bowl",
+    "ingredients": ["chicken", "lettuce", "olive oil", "nuts"],
+    "diet": ["high_protein", "gluten_free"],
+    "allergens": ["nuts"],
+    "calories": 420
+  }
+]
