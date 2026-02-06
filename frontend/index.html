@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Restaurant AI Assistant</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f7fb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .box {
+      background: white;
+      width: 420px;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    select,
+    textarea,
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      background: #4f46e5;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background: #4338ca;
+    }
+
+    .answer {
+      margin-top: 15px;
+      background: #eef2ff;
+      padding: 12px;
+      border-radius: 8px;
+      white-space: pre-wrap;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <h2>🍽 Restaurant AI</h2>
+
+    <select id="diet">
+      <option value="all">All</option>
+      <option value="vegan">Vegan</option>
+      <option value="vegetarian">Vegetarian</option>
+      <option value="gluten-free">Gluten Free</option>
+    </select>
+
+    <textarea id="question" rows="3" placeholder="Ask about the menu..."></textarea>
+
+    <button onclick="askAI()">Ask AI</button>
+
+    <div class="answer" id="answerBox"></div>
+  </div>
+
+  <script>
+    function formatAnswer(text) {
+
+      // Detect markdown table
+      if (text.includes("| Dish") && text.includes("|---")) {
+
+        const rows = text.trim().split("\n").filter(r => r.includes("|"));
+
+        const tableRows = rows.slice(2); // skip header + separator
+
+        let html = `
+      <table style="width:100%;border-collapse:collapse;margin-top:10px;">
+        <tr style="background:#4f46e5;color:white;">
+          <th style="padding:8px;">Dish</th>
+          <th style="padding:8px;">Calories</th>
+          <th style="padding:8px;">Allergens</th>
+        </tr>
+    `;
+
+        tableRows.forEach(row => {
+          const cols = row.split("|").map(c => c.trim()).filter(Boolean);
+
+          html += `
+        <tr style="background:#f6f7fb;">
+          <td style="padding:8px;">${cols[0]}</td>
+          <td style="padding:8px;">${cols[1]}</td>
+          <td style="padding:8px;">${cols[2]}</td>
+        </tr>
+      `;
+        });
+
+        html += "</table>";
+        return html;
+      }
+
+      // fallback normal text
+      return text.replace(/\n/g, "<br>");
+    }
+
+
+    async function askAI() {
+      const question = document.getElementById("question").value;
+      const diet = document.getElementById("diet").value;
+      const answerBox = document.getElementById("answerBox");
+
+      answerBox.innerText = "Analyzing menu... 🍽";
+
+      try {
+        const res = await fetch("http://127.0.0.1:5000/ask", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query: question, diet: diet })
+        });
+
+        const data = await res.json();
+        answerBox.innerHTML = formatAnswer(data.answer);
+
+      } catch (err) {
+        answerBox.innerText = "❌ Connection error";
+      }
+    }
+  </script>
+</body>
+
+</html>
