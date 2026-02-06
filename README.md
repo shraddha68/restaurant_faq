@@ -55,6 +55,9 @@ The system provides **fast, accurate, and easy-to-understand responses**, improv
 **Backend**
 - Python
 - Flask / FastAPI
+- Create a .env file and add:
+  GROQ_API_KEY=your_key_here
+
 
 **Generative AI**
 - Large Language Model (LLM) API
